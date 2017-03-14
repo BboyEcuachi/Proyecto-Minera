@@ -2,7 +2,7 @@ module.exports = function(app, passport) {
     var fs = require('fs');
 
     app.get('/', function(req, res) {
-        res.redirect('/login');
+        res.redirect('/index.html');
     });
 
     app.get('/home', isLoggedIn, function (req, res) {
@@ -51,21 +51,9 @@ module.exports = function(app, passport) {
         res.render('CrearUsuario.html', {title: 'Registrar Usuarios'});
     });
 
-    app.get('/agregarEncuestado', isLoggedIn, function (req, res) {
-        res.render('AgregarEncuestado.html')
-    });
-
-    app.get('/verEncuestados', isLoggedIn, function (req, res) {
-        res.render('VerEncuestados.html')
-    });
-
     app.get('/verEncuesta/:id',isLoggedIn, function (req, res) {
         //var surveyID = req.params.id;
         res.render('VerEncuesta.html', {surveyID: req.params.id});
-    });
-
-    app.get('/Llamar',isLoggedIn, function (req, res) {
-        res.render('Llamar.html');
     });
 
     app.get('/Subir',isLoggedIn, function (req, res) {
@@ -76,15 +64,9 @@ module.exports = function(app, passport) {
         res.render('CrearProyecto.html');
     });
 
-    app.get('/crearEncuesta',isLoggedIn, function (req, res) {
-        res.render('CrearEncuesta.html');
-    });
 
     app.get('/verEncuestas',isLoggedIn, function (req, res) {
         res.render('VerEncuestas.html');
-    });
-    app.get('/verAudios', isLoggedIn, function (req, res) {
-        res.render('VerAudios.html');
     });
 
     app.get('/verListaArchivos', function (req, res) {
