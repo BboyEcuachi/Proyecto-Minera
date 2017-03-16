@@ -47,26 +47,21 @@ module.exports = function(app, passport) {
         res.render('VerUsuarios.html');
     });
 
-    app.get('/crearUsuario', isLoggedIn, function (req, res) {
+    app.get('/crearUsuario', function (req, res) {
         res.render('CrearUsuario.html', {title: 'Registrar Usuarios'});
     });
 
-    app.get('/verEncuesta/:id',isLoggedIn, function (req, res) {
-        //var surveyID = req.params.id;
-        res.render('VerEncuesta.html', {surveyID: req.params.id});
+    app.get('/mail', function (req, res) {
+        res.render('Mail.html');
     });
 
-    app.get('/Subir',isLoggedIn, function (req, res) {
-        res.render('subirArchivo.html');
-    });
-
-    app.get('/crearProyecto',isLoggedIn, function (req, res) {
+    app.get('/crearProyecto', function (req, res) {
         res.render('CrearProyecto.html');
     });
 
 
-    app.get('/verEncuestas',isLoggedIn, function (req, res) {
-        res.render('VerEncuestas.html');
+    app.get('/Equipo', function (req, res) {
+        res.render('Equipo.html');
     });
 
     app.get('/verListaArchivos', function (req, res) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title>CATI</title>
+    <title>MAD CHILE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,50 +29,44 @@
     <div class="nav-agency">
         <div class="navbar navbar-static-top">
             <div class="navbar-inner">
-                <div class="container"> <a class="brand" href="index.html"> <img src="img/Logo.png" alt=""></a>
+                <div class="container"> <a class="brand" href="index.html"> <img src="img/Logo U.png" alt=""></a>
                     <div id="main-nav">
                         <div class="nav-collapse collapse">
                             <ul class="nav">
                                 <li class="active"><a href="index.html">Home</a> </li>
-                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Opciones <b class="caret"></b></a>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Noticias <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/verUsuario">Ver Usuarios</a></li>
-                                        <li><a href="/crearUsuario">Crear Usuario</a></li>
-                                        <li><a href="/verEncuestados">Ver Entrevistados</a></li>
-                                        <li><a href="/AgregarEncuestado">Agregar Entrevistado</a></li>
+                                        <li><a href="#"> "redireccion a listado de noticia por fechas" </a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Encuesta <b class="caret"></b></a>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Servicios <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/verEncuestas">Ver Encuesta</a></li>
-                                        <li><a href="/crearEncuesta"> Crear nueva encuesta </a></li>
-                                        <li><a href="#"> Ver encuestas </a></li>
+                                        <li><a href="#"> "redireccion a informacion sobre servicios de la empresa" </a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> LLamado <b class="caret"></b></a>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Clientes <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/Llamar">Llamar</a></li>
+                                        <li><a href="#"> Links de clientes </a></li>
                                     </ul>
-                                </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BD <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Proyectos <span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="/Subir">Subir archivo</a></li>
-                                        <li><a href="/VerAudios">Exportar Audios</a></li>
+                                        <li><a href="#"> Proyectos en Marcha </a></li>
+                                        <li><a href="#"> Proyectos Realizados </a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Proyecto <b class="caret"></b></a>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Nosotros <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/crearProyecto"> Crear Nuevo Proyecto </a></li>
-                                        <li><a href="#"> Ver Proyectos Actuales </a></li>
+                                        <li><a href="/Equipo"> Equipo de Trabajo Multidisciplinario </a></li>
+                                        <li><a href="#"> Tecnologias </a></li>
+                                        <li><a href="#"> Historia </a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                       aria-expanded="false">{{user.username}}<span class="caret"></span></a>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Contactanos <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/profile">Ver Perfil</a></li>
-                                        <li><a href="/logout">Cerrar Sesión</a></li>
+                                        <li><a href="#"> Fono - Direccion - Email </a></li>
+                                        <li><a href="#"> Mapa Direcciones </a></li>
+                                        <li><a href="/mail"> Escribenos ahora </a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -84,38 +78,16 @@
     </div>
 </div>
 <div class="page-header text-center" align="center">
-    <h1>Lista de encuestas</h1>
+    <h1> Escribenos Ahora :) </h1>
 </div>
+aqui se debe mandar el mail! jeje
 
-<table class="table" id="table">
-    <thead>
-    <tr>
-        <th> ID </th>
-        <th> Nombre </th>
-        <th> Id Proyecto </th>
-        <th> URL </th>
-        <th> Acciones </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="survey in surveys">
-        <td>{{survey.id}}</td>
-        <td>{{survey.name}}</td>
-        <td>{{survey.ProyectoId}}</td>
-        <td>{{survey.url}}</td>
-        <td>
-            <a href="/verEncuesta/{{survey.id}}" class="btn btn-primary btn-sm">Ver</a>
-            <button class="btn btn-primary btn-sm" type="button"                           > Modificar </button>
-        </td>
-    </tr>
-    </tbody>
-</table>
 <footer class="footer">
     <div class="container">
         <div class="row-fluid">
             <div class="span12">
                 <blockquote>
-                    <p class="testimonial">Algunas personas sueñan con hacer grandes cosas, mientras otras están despiertas y las hacen.</p>
+                    <p class="testimonial">Calidad de servicio no es lo que tú das… Es lo que el cliente recibe.</p>
                     <p class="name"><b></b></p>
                 </blockquote>
             </div>
