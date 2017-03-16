@@ -47,7 +47,7 @@ module.exports = function(app, passport) {
         res.render('VerUsuarios.html');
     });
 
-    app.get('/crearUsuario', isLoggedIn, function (req, res) {
+    app.get('/crearUsuario', function (req, res) {
         res.render('CrearUsuario.html', {title: 'Registrar Usuarios'});
     });
 
@@ -56,16 +56,16 @@ module.exports = function(app, passport) {
         res.render('VerEncuesta.html', {surveyID: req.params.id});
     });
 
-    app.get('/Subir',isLoggedIn, function (req, res) {
+    app.get('/Subir', function (req, res) {
         res.render('subirArchivo.html');
     });
 
-    app.get('/crearProyecto',isLoggedIn, function (req, res) {
+    app.get('/crearProyecto', function (req, res) {
         res.render('CrearProyecto.html');
     });
 
 
-    app.get('/verEncuestas',isLoggedIn, function (req, res) {
+    app.get('/verEncuestas', function (req, res) {
         res.render('VerEncuestas.html');
     });
 

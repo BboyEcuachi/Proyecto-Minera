@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title>CATI</title>
+    <title>MAD CHILE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -84,29 +84,38 @@
     </div>
 </div>
 <div class="page-header text-center" align="center">
-    <h1>Lista de encuestas</h1>
+    <h1>Nuestro personal</h1>
 </div>
 
-<table class="table" id="table">
+<table class="table" id="table" align="center">
     <thead>
     <tr>
-        <th> ID </th>
+        <th> Foto </th>
         <th> Nombre </th>
-        <th> Id Proyecto </th>
-        <th> URL </th>
-        <th> Acciones </th>
+        <th> Cargo </th>
+        <th> -- </th>
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="survey in surveys">
-        <td>{{survey.id}}</td>
-        <td>{{survey.name}}</td>
-        <td>{{survey.ProyectoId}}</td>
-        <td>{{survey.url}}</td>
-        <td>
-            <a href="/verEncuesta/{{survey.id}}" class="btn btn-primary btn-sm">Ver</a>
-            <button class="btn btn-primary btn-sm" type="button"                           > Modificar </button>
-        </td>
+
+    <!-- Here some kind of for -->
+    <tr>
+        <td><img src="img/Felipe Villagran L..jpg" alt="" border=3 height=100 width=100></td>
+        <td style="vertical-align:middle">Felipe Villagran</td>
+        <td style="vertical-align:middle">Ingeniero de Proyectos</td>
+        <td>--</td>
+    </tr>
+    <tr>
+        <td><img src="img/Jorge Herrera G..JPG" alt="" border=3 height=100 width=100></td>
+        <td style="vertical-align:middle">Jorge Herrera</td>
+        <td style="vertical-align:middle">Gestionador Comercial</td>
+        <td>--</td>
+    </tr>
+    <tr>
+        <td><img src="img/Roberto Sánchez I..jpg" alt="" border=3 height=100 width=100></td>
+        <td style="vertical-align:middle">Roberto Sanchez</td>
+        <td style="vertical-align:middle">Proyectista</td>
+        <td>--</td>
     </tr>
     </tbody>
 </table>
@@ -115,7 +124,7 @@
         <div class="row-fluid">
             <div class="span12">
                 <blockquote>
-                    <p class="testimonial">Algunas personas sueñan con hacer grandes cosas, mientras otras están despiertas y las hacen.</p>
+                    <p class="testimonial">Calidad de servicio no es lo que tú das… Es lo que el cliente recibe.</p>
                     <p class="name"><b></b></p>
                 </blockquote>
             </div>

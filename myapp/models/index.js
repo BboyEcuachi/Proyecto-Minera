@@ -9,7 +9,7 @@ var opts = {
         freezeTableName: true
     }
 }
-var sequelize = new Sequelize('workweb', 'root', 'root',opts);
+var sequelize = new Sequelize('workweb', 'root', 'mysqlroot',opts);
 var db        = {};
 
 fs
