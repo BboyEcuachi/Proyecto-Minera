@@ -52,7 +52,7 @@ models.sequelize.sync().then(function () {
 	var server = app.listen(3000, function () {
 		var host = ip.address();
 		var port = server.address().port;
-		console.log('Example app listening at http://%s:%s', host, port);
+		console.log('Your app is listening at http://%s:%s', host, port);
 	});
 });
 

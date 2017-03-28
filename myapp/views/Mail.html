@@ -65,7 +65,7 @@
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Contactanos <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#"> Fono - Direccion - Email </a></li>
-                                        <li><a href="#"> Mapa Direcciones </a></li>
+                                        <li><a href="/Mapa"> Mapa Direcciones </a></li>
                                         <li><a href="/mail"> Escribenos ahora </a></li>
                                     </ul>
                                 </li>
@@ -78,9 +78,20 @@
     </div>
 </div>
 <div class="page-header text-center" align="center">
-    <h1> Escribenos Ahora :) </h1>
+    <h1> Escribenos Ahora </h1>
+    <h2></h2>
+
+    <form action="contacto@madchile.cl" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="500"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
 </div>
-aqui se debe mandar el mail! jeje
 
 <footer class="footer">
     <div class="container">
