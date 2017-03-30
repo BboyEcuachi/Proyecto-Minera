@@ -84,7 +84,8 @@
         E-mail:<br>
         <input type="text" name="mail"><br>
         Comment:<br>
-        <input type="text" name="comment" size="500"><br><br>
+        <textArea type="text" name="comment" size="500">
+			</textArea><br><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
     </form>
