@@ -51,13 +51,13 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Proyectos <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="/showdatabase.php"> Proyectos en Marcha </a></li>
+                    <li><a href="/vistas/showdatabase.php"> Proyectos en Marcha </a></li>
                     <li><a href="#"> Proyectos Realizados </a></li>
                   </ul>
                 </li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Nosotros <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="/vista/equipo.php"> Equipo de Trabajo Multidisciplinario </a></li>
+                    <li><a href="/vistas/equipo.php"> Equipo de Trabajo Multidisciplinario </a></li>
                     <li><a href="#"> Tecnologias </a></li>
                     <li><a href="#"> Historia </a></li>
                   </ul>
@@ -65,8 +65,8 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Contactanos <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#"> Fono - Direccion - Email </a></li>
-                    <li><a href="/vista/mapa.php"> Mapa Direcciones </a></li>
-                    <li><a href="/vista/mail.php"> Escribenos ahora </a></li>
+                    <li><a href="/vistas/mapa.php"> Mapa Direcciones </a></li>
+                    <li><a href="/vistas/mail.php"> Escribenos ahora </a></li>
                   </ul>
                 </li>
               </ul>
